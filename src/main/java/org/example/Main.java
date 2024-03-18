@@ -16,9 +16,12 @@ public class Main {
     }
 
     public static boolean isCatPlaying(boolean isSummer, int temp) {
-     if (temp >= 25 && temp <= 35) {
-         return true;
-     } else return isSummer && (temp >= 25 && temp <= 45);
+        if (isSummer) {
+            return temp >= 25 && temp <= 45;
+         } else {
+            return temp >= 25 && temp <= 35;
+        }
+
     }
 
     public static double area(double width, double height) {
